@@ -19,8 +19,10 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.cloud:spring-cloud-starter-config")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("org.springframework.cloud:spring-cloud-starter-bus-amqp")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     compileOnly("org.projectlombok:lombok")
+    compileOnly("com.rabbitmq:stream-client:0.15.0")
     annotationProcessor("org.projectlombok:lombok")
 }
 
